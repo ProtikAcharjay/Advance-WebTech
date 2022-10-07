@@ -18,5 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hello', [PagesController::class, 'index'])->name('hello');
+Route::get('/home', [PagesController::class, 'index'])->name('home');
 Route::get('/profile',[PagesController::class, 'profile'])->name('profile');
+Route::get('/ourteams',[PagesController::class, 'teams'])->name('teams');
+Route::get('/aboutus',[PagesController::class, 'aboutus'])->name('aboutus');
+Route::get('/contactus',[PagesController::class, 'contactus'])->name('contactus');
+Route::get('/services',[PagesController::class, 'services'])->name('services');
