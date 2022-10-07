@@ -38,7 +38,7 @@ public function aboutus(){
 }
 public function teams(){
 
-    $teammembers=array("Protik", "Shojib", "Oscar");
+    $teammembers=array("Protik", "Shojib", "Oscar","Prity");
     return view('teams')->with('teammembers', $teammembers);
 }
 public function services(){
