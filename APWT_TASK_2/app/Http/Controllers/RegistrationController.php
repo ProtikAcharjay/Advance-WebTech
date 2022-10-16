@@ -11,7 +11,15 @@ class RegistrationController extends Controller
         return view('layouts.form');
     }
     public function register(Request $request){
-       echo "<pre>" ;
+       
+        $request->validate(
+            ['name'=>'required',
+            'id'=>'required',
+            'email'=>'required|email',
+            'password'=>'required']
+    );
+       
+        echo "<pre>" ;
         print_r($request->all());
     }
 }
